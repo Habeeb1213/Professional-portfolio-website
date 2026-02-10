@@ -26,13 +26,19 @@ const Navbar = () => {
           </div>
           
           <div className="flex items-center space-x-4">
-            {/* Theme Toggle for Mobile */}
+            {/* Theme Toggle for Mobile with Font Awesome */}
             <button
               onClick={toggleTheme}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white"
+              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
               aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
             >
-              {isDarkMode ? '🌞' : '🌙'}
+              {isDarkMode ? (
+                // Sun icon from Font Awesome
+                <i className="fas fa-sun text-lg"></i>
+              ) : (
+                // Moon icon from Font Awesome
+                <i className="fas fa-moon text-lg"></i>
+              )}
             </button>
             
             {/* Mobile Menu Button */}

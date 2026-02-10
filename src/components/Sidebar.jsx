@@ -108,26 +108,24 @@ const socialLinks = [
                 </p>
               </div>
 
-              {/* Theme Toggle at Top Right */}
-              <div className="flex justify-center">
-                <button
-                  onClick={toggleTheme}
-                  className="flex items-center justify-center px-4 py-2.5 rounded-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-300 group border border-gray-300 dark:border-gray-700"
-                  aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
-                >
-                  {isDarkMode ? (
-                    <>
-                      <Sun className="w-4 h-4 mr-2 text-yellow-500" />
-                      <span className="text-sm font-medium">Light Mode</span>
-                    </>
-                  ) : (
-                    <>
-                      <Moon className="w-4 h-4 mr-2 text-gray-700 dark:text-gray-300" />
-                      <span className="text-sm font-medium">Dark Mode</span>
-                    </>
-                  )}
-                </button>
-              </div>
+            // Update the theme toggle button in the sidebar:
+      <button
+  onClick={toggleTheme}
+  className="flex items-center justify-center px-4 py-2.5 rounded-full bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-300 group border border-gray-300 dark:border-gray-700"
+  aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+>
+  {isDarkMode ? (
+    <>
+      <i className="fas fa-sun mr-2 text-yellow-500"></i>
+      <span className="text-sm font-medium">Light Mode</span>
+    </>
+  ) : (
+    <>
+      <i className="fas fa-moon mr-2 text-gray-700 dark:text-gray-300"></i>
+      <span className="text-sm font-medium">Dark Mode</span>
+    </>
+  )}
+</button>
             </div>
 
             {/* Scrollable Navigation */}
