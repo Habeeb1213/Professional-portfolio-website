@@ -232,10 +232,10 @@ const Contact = () => {
               ></textarea>
             </div>
             
-          <button
+<button
   type="submit"
   disabled={isSubmitting}
-  className="w-full md:w-auto flex items-center justify-center px-10 py-5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold text-lg rounded-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-black dark:hover:bg-gray-100 hover:shadow-xl transform hover:-translate-y-0.5"
+  className="w-full md:w-auto flex items-center justify-center px-10 py-5 bg-gray-900 dark:bg-white text-gray-900 dark:text-gray-900 font-bold text-lg rounded-lg border-2 border-black dark:border-white"
 >
   {isSubmitting ? (
     <>
@@ -249,7 +249,6 @@ const Contact = () => {
     </>
   )}
 </button>
-            
             <div className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
               <p>* Required fields</p>
               <p>I typically respond within 24 hours</p>
