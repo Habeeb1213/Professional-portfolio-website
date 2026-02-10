@@ -232,23 +232,23 @@ const Contact = () => {
               ></textarea>
             </div>
             
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full md:w-auto flex items-center justify-center px-10 py-5 bg-black dark:bg-white text-white dark:text-black font-bold text-lg rounded-lg hover:opacity-90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105 active:scale-95"
-            >
-              {isSubmitting ? (
-                <>
-                  <Loader2 className="w-5 h-5 mr-3 animate-spin" />
-                  Sending Message...
-                </>
-              ) : (
-                <>
-                  <Send className="w-5 h-5 mr-3" />
-                  Send Message
-                </>
-              )}
-            </button>
+          <button
+  type="submit"
+  disabled={isSubmitting}
+  className="w-full md:w-auto flex items-center justify-center px-10 py-5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold text-lg rounded-lg hover:bg-black dark:hover:bg-gray-100 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl"
+>
+  {isSubmitting ? (
+    <>
+      <Loader2 className="w-5 h-5 mr-3 animate-spin" />
+      Sending Message...
+    </>
+  ) : (
+    <>
+      <Send className="w-5 h-5 mr-3" />
+      Send Message
+    </>
+  )}
+</button>
             
             <div className="text-sm text-gray-500 dark:text-gray-400 space-y-1">
               <p>* Required fields</p>
